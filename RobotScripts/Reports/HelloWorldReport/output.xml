@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.3 on win32)" generated="2024-07-05T11:26:47.951839" rpa="false" schemaversion="5">
+<suite id="s1" name="Helloworld" source="H:\Downloads\robotframework-dir\RobotScripts\Helloworld.robot">
+<test id="s1-t1" name="Using the Custom Library" line="10">
+<kw name="Hello World" owner="hello-world">
+<msg time="2024-07-05T11:26:47.968759" level="INFO">Hello, World!</msg>
+<status status="PASS" start="2024-07-05T11:26:47.968759" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-05T11:26:47.967776" elapsed="0.000983"/>
+</test>
+<test id="s1-t2" name="First Test Case (Successful)" line="13">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-05T11:26:47.968759" level="INFO">Hello, Robot Framework!</msg>
+<arg>${WELCOME-MSG}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-05T11:26:47.968759" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${1}</arg>
+<arg>${1}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-05T11:26:47.969815" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-05T11:26:47.969815" level="INFO">Numbers are equal!</msg>
+<arg>${SUCC-MSG}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-05T11:26:47.969815" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-05T11:26:47.968759" elapsed="0.001056"/>
+</test>
+<test id="s1-t3" name="Second Test Case (Fail)" line="18">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-05T11:26:47.970825" level="INFO">Hello, Robot Framework!</msg>
+<arg>${WELCOME-MSG}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-05T11:26:47.970825" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<msg time="2024-07-05T11:26:47.970825" level="FAIL">1 != 2</msg>
+<arg>${1}</arg>
+<arg>${2}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="FAIL" start="2024-07-05T11:26:47.970825" elapsed="0.000985">1 != 2</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${FAIL-MSG}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-07-05T11:26:47.971810" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-07-05T11:26:47.970825" elapsed="0.000985">1 != 2</status>
+</test>
+<status status="FAIL" start="2024-07-05T11:26:47.952632" elapsed="0.019178"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="Helloworld">Helloworld</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

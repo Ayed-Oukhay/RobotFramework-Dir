@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.3 on win32)" generated="2024-07-05T11:35:33.842089" rpa="false" schemaversion="5">
+<suite id="s1" name="SeleniumTest" source="H:\Downloads\robotframework-dir\RobotScripts\SeleniumTest.robot">
+<test id="s1-t1" name="Open Browser and Check Title" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-05T11:35:33.967701" level="INFO">Opening browser 'chrome' to base url 'http://google.com'.</msg>
+<msg time="2024-07-05T11:35:34.218204" level="WARN">The chromedriver version (125.0.6422.141) detected in PATH at H:\Desktop\Classes\QA\webdrivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.127); currently, chromedriver 126.0.6478.126 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-05T11:35:33.967701" elapsed="3.973009"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-05T11:35:37.953272" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-05T11:35:37.942733" elapsed="0.010539"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-05T11:35:37.955266" elapsed="2.105837"/>
+</kw>
+<status status="PASS" start="2024-07-05T11:35:33.966875" elapsed="6.095223"/>
+</test>
+<status status="PASS" start="2024-07-05T11:35:33.843088" elapsed="6.220001"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="SeleniumTest">SeleniumTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-05T11:35:34.218204" level="WARN">The chromedriver version (125.0.6422.141) detected in PATH at H:\Desktop\Classes\QA\webdrivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.127); currently, chromedriver 126.0.6478.126 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
